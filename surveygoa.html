@@ -47,13 +47,16 @@ User Story #16: Inside the form element, I am presented with a button with id="s
         body{
  
 
-         background:  background: url('https://images.unsplash.com/photo-1518176258769-f227c798150e') center;
-  background-size: cover;
-  padding: 4rem 2rem;
-  /* grid styles */
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  align-items: center; 
+         background: linear-gradient(
+      rgba(0, 226, 255, 0.45), 
+      rgba(216, 255, 0, 0.39)
+    ), url("https://static.wixstatic.com/media/1c30a4_81da6fbb1e884eaa91c118ff73aa40b0~mv2.jpg") no-repeat center center fixed; ,
+            
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;; background-attachment:fixed;*/
+        /* overflow-x: hidden; /* Hide horizontal scrollbar */     
   }
         .logo img{
   max-width: 39%;
