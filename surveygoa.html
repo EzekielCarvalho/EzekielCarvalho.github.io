@@ -50,16 +50,16 @@ User Story #16: Inside the form element, I am presented with a button with id="s
          background: linear-gradient(
       rgba(0, 226, 255, 0.45), 
       rgba(216, 255, 0, 0.39)
-    ), url("https://static.wixstatic.com/media/1c30a4_81da6fbb1e884eaa91c118ff73aa40b0~mv2.jpg") no-repeat center center fixed; ,
+    ), url("https://static.wixstatic.com/media/1c30a4_81da6fbb1e884eaa91c118ff73aa40b0~mv2.jpg"); ,
             
   -webkit-background-size: cover; background-attachment:fixed;
   -moz-background-size: cover; background-attachment:fixed;
   -o-background-size: cover; background-attachment:fixed;
   background-size: cover; background-attachment:fixed;
              min-width:1050px;
-              width: auto ;
-  max-width: 100% ;
-  height: auto ;
+ background-repeat: no-repeat;
+ background-size: 100%;
+ background-position: center;
         /* overflow-x: hidden; /* Hide horizontal scrollbar */     
   }
         .logo img{
@@ -281,7 +281,7 @@ label {
     margin-top: 0;
         width: auto ;
   max-width: 100% ;
-  height: auto ;
+  height: auto ;  
   }
 }
  @media screen and (max-width: 600px) {
