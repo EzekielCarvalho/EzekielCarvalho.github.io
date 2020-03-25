@@ -43,30 +43,6 @@ User Story #16: Inside the form element, I am presented with a button with id="s
     
     <style>
         
-        #mySlideshow {
-  margin: 50px auto 0;
-  max-width: 600px;
-  height: 300px;
-  position: relative;
-  overflow: hidden;
-}
-
-img {
-  transform: translate(600px);
-  position: absolute;
-  width: 100%;
-}
-
-.showcase-img {
-  transform: translate(0);
-  transition: .6s;
-}
-
-.showcase-left {
-  transform: translate(-600px);
-  transition: .6s;
-}
-        
 
         body{
  
@@ -514,9 +490,6 @@ background-position:center;
         <img src="https://i.pinimg.com/originals/77/22/af/7722af354dddd4e92a31ac65e1fd7878.jpg" alt="Logo" width= auto height=auto
 style="width:auto;height:auto;"> <br>
       </div>
-        
-
-        
       <h1 id="title">
         
         Brief Census Survey - State of Goa
@@ -531,8 +504,6 @@ style="width:auto;height:auto;"> <br>
             
         
         </p> 
-        
-
       
       
       </header>
@@ -954,39 +925,7 @@ style="width:auto;height:auto;"> <br>
     }
 </script>
         
-        <script>
         
-            const images = document.querySelectorAll(".gallery-item");
-
-let timmer = setInterval(cycleImage, 4000);
-
-// Will always stay the same
-const length = images.length;
-// Will increment by one everytime the function is called.
-let imageCounter = images.length;
-// e.g. 3 % 3 = 0, 4 % 3 = 1, 5 % 3 = 2, etc.
-// loops through the array like this, using the remainder as the index number
-
-function cycleImage() {
-  //the new item in the array shown
-  let newIndex = imageCounter % length;
-  //the previous item in the array
-  let lastIndex = 0;
-  newIndex === 0 ? lastIndex = length - 1 : lastIndex = newIndex - 1;
-  //the item before lastIndex
-  //moves it back to rest on the right side
-  let moveIndexRight = 0;
-  lastIndex === 0 ? moveIndexRight = length - 1 : moveIndexRight = lastIndex - 1;
-  images[newIndex].classList.add("showcase-img");
-  images[lastIndex].classList.remove("showcase-img");
-  images[lastIndex].classList.add("showcase-left");
-  images[moveIndexRight].classList.remove("showcase-left");
-  imageCounter++;
-}
-
-cycleImage();
-        
-        </script>
           
  </form>
     
