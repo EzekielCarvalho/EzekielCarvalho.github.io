@@ -36,12 +36,18 @@ User Story #16: Inside the form element, I am presented with a button with id="s
 <html>
 <head>
   <meta charset="utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
     
    <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
     
     <style>
+        
+        .mySlides {display:none;}
         
 
         body{
@@ -490,6 +496,15 @@ background-position:center;
         <img src="https://i.pinimg.com/originals/77/22/af/7722af354dddd4e92a31ac65e1fd7878.jpg" alt="Logo" width= auto height=auto
 style="width:auto;height:auto;"> <br>
       </div>
+        
+        <h2 class="w3-center">Automatic Slideshow</h2>
+
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="img_la.jpg" style="width:100%">
+  <img class="mySlides" src="img_ny.jpg" style="width:100%">
+  <img class="mySlides" src="img_chicago.jpg" style="width:100%">
+</div>
+        
       <h1 id="title">
         
         Brief Census Survey - State of Goa
@@ -923,6 +938,23 @@ style="width:auto;height:auto;"> <br>
         let finalVal = ele.match(/.{1,4}/g).join('-');
         document.getElementById(element.id).value = finalVal;
     }
+</script>
+        
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
 </script>
           
  </form>
