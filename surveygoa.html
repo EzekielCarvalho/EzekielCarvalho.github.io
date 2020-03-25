@@ -43,29 +43,14 @@ User Story #16: Inside the form element, I am presented with a button with id="s
     
     <style>
         
-        .mySlideshow {
-  margin: 50px auto 0;
-  max-width: auto;
-  height: auto;
-  position: relative;
-  overflow: hidden;
-}
+.fling-minislide {width:100%; height:0px; padding-bottom: 50%; overflow:hidden; position:relative; }
+.fling-minislide img{ position:absolute; animation:fling-minislide 20s infinite; opacity:0; width: 100%; height: auto;}
 
-img {
-  transform: translate(600px);
-  position: absolute;
-  width: 100%;
-}
-
-.showcase-img {
-  transform: translate(0);
-  transition: .6s;
-}
-
-.showcase-left {
-  transform: translate(-600px);
-  transition: .6s;
-}
+@keyframes fling-minislide {25%{opacity:1;} 40%{opacity:0;}}
+.fling-minislide img:nth-child(4){animation-delay:0s;}
+.fling-minislide img:nth-child(3){animation-delay:5s;}
+.fling-minislide img:nth-child(2){animation-delay:10s;}
+.fling-minislide img:nth-child(1){animation-delay:15s;}
         
 
         body{
@@ -82,7 +67,7 @@ background-size:cover;
 background-position:center;
         /* overflow-x: hidden; /* Hide horizontal scrollbar */     
   }
-    /*    .logo img{
+        .logo img{
   max-width: 39%;
         height: auto;  
         border-radius: 25px;
@@ -93,7 +78,7 @@ background-position:center;
         vertical-align: bottom;
             margin-top: 15%;
         
-        box-shadow: 10px 10px 20px rgba(0,0,0,0.19), 10px 6px 6px rgba(0,0,0,0.23); */
+        box-shadow: 10px 10px 20px rgba(0,0,0,0.19), 10px 6px 6px rgba(0,0,0,0.23);
                
 }
         
@@ -510,17 +495,22 @@ background-position:center;
   <main>
 
     <header>
-      <!--  <div class="logo">
-        <img src="https://i.pinimg.com/originals/77/22/af/7722af354dddd4e92a31ac65e1fd7878.jpg" alt="Logo"> <br>
-      </div> -->
+        <div class="logo">
+        <img src="https://i.pinimg.com/originals/77/22/af/7722af354dddd4e92a31ac65e1fd7878.jpg" alt="Logo" width= auto height=auto
+style="width:auto;height:auto;"> <br>
+      </div>
         
-        <div class="mySlideshow">
-  <img class="gallery-item" src="https://static.toiimg.com/thumb/msid-55310626,width-748,height-499,resizemode=4,imgsize-175052/The-best-beaches-of-Goa.jpg" alt="pic1">
-  <img class="gallery-item" src="https://cdn1.goibibo.com/t_tg_fs/goa-miramar-beach-147714498468-orijgp.jpg" alt="pic2">
-  <img class="gallery-item" src="https://www.trawell.in/admin/images/upload/140035174Goa_Main.jpg" alt="pic3">
-  <img class="gallery-item" src="https://imgcld.yatra.com/ytimages/image/upload/t_yt_blog_c_fill_q_auto:good_f_auto_w_800_h_500/v1450246263/Word_Goa_on_beach.jpg" alt="pic4">
-  <img class="gallery-item" src="https://static.toiimg.com/thumb/msid-55310626,width-748,height-499,resizemode=4,imgsize-175052/The-best-beaches-of-Goa.jpg" alt="pic5">
+         
+
+<div class="fling-minislide">
+  <img src="https://cdn1.goibibo.com/t_tg_fs/goa-miramar-beach-147714498468-orijgp.jpg" alt="Slide 4" />
+  <img src="https://static.toiimg.com/thumb/msid-55310626,width-748,height-499,resizemode=4,imgsize-175052/The-best-beaches-of-Goa.jpg" alt="Slide 3" />
+
+  <img src="https://www.trawell.in/admin/images/upload/140035174Goa_Main.jpg" alt="Slide 2" />
+
+  <img src="https://imgcld.yatra.com/ytimages/image/upload/t_yt_blog_c_fill_q_auto:good_f_auto_w_800_h_500/v1450246263/Word_Goa_on_beach.jpg" alt="Slide 1" />
 </div>
+        
         
       <h1 id="title">
         
@@ -957,39 +947,7 @@ background-position:center;
     }
 </script>
         
-        <script>
         
-            const images = document.querySelectorAll(".gallery-item");
-
-let timmer = setInterval(cycleImage, 4000);
-
-// Will always stay the same
-const length = images.length;
-// Will increment by one everytime the function is called.
-let imageCounter = images.length;
-// e.g. 3 % 3 = 0, 4 % 3 = 1, 5 % 3 = 2, etc.
-// loops through the array like this, using the remainder as the index number
-
-function cycleImage() {
-  //the new item in the array shown
-  let newIndex = imageCounter % length;
-  //the previous item in the array
-  let lastIndex = 0;
-  newIndex === 0 ? lastIndex = length - 1 : lastIndex = newIndex - 1;
-  //the item before lastIndex
-  //moves it back to rest on the right side
-  let moveIndexRight = 0;
-  lastIndex === 0 ? moveIndexRight = length - 1 : moveIndexRight = lastIndex - 1;
-  images[newIndex].classList.add("showcase-img");
-  images[lastIndex].classList.remove("showcase-img");
-  images[lastIndex].classList.add("showcase-left");
-  images[moveIndexRight].classList.remove("showcase-left");
-  imageCounter++;
-}
-
-cycleImage();
-        
-        </script>
           
  </form>
     
