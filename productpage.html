@@ -38,12 +38,13 @@ User Story #15: My product landing page should utilize CSS flexbox at least once
     <style>
 section {
   position: relative;
-    height: 100%;
-     vertical-align: middle;
 }
 
 section img {
   position: absolute;
+    margin: auto;
+    width: auto;
+    height: auto;
 }
         
 .top {
@@ -68,8 +69,39 @@ section img {
     opacity: 0;
   }
 }
+       
+        @media (max-width: 480px) {
+  .top {
+    background-image: url(mobile.png);
+    background-repeat: no-repeat;
+    background-size: contain ;
+  }
+}
+@media (min-width: 481px) {
+  .top {
+    background-image: url(desktop.png);
+    background-repeat: no-repeat;
+    background-size: contain ;
+  }
+}
         
+@media screen and ( max-width: 1024px ) {
+img.top { width: 200px; }
+}
+@media screen and ( min-width: 1025px) {
+img.top { width: 300px;}
+}
+img.top { height: auto; }
+}
+  
         
+@media screen and ( max-width: 1024px ) {
+img.bottom { width: 200px; }
+}
+@media screen and ( min-width: 1025px) {
+img.bottom { width: 300px;}
+}
+img.bottom { height: auto; }
      
     
     </style>
@@ -79,7 +111,7 @@ section img {
 </head>
     
     <section>
-  <img class="bottom" style="margin: auto" style="width: 100%" src="https://EzekielCarvalho.github.io/images_page/second.png" />
+  <img class="bottom" src="https://EzekielCarvalho.github.io/images_page/second.png" />
   <img class="top"  src="https://EzekielCarvalho.github.io/images_page/first.png" />
 </section>
     
