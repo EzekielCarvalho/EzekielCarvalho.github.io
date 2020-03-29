@@ -33,27 +33,43 @@ User Story #15: My product landing page should utilize CSS flexbox at least once
 <html lang="en">
 <head>
   <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <style>
-#cf {
-  position:relative;
-  height:281px;
-  width:450px;
-  margin:0 auto;
+section {
+  position: relative;
+    height: 100%;
+     vertical-align: middle;
 }
 
-#cf img {
-  position:absolute;
-  left:0;
-  -webkit-transition: opacity 1s ease-in-out;
-  -moz-transition: opacity 1s ease-in-out;
-  -o-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
+section img {
+  position: absolute;
+}
+        
+.top {
+  animation-name: fade;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 20s;
+  animation-direction: alternate;
 }
 
-#cf img.top:hover {
-  opacity:0;
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
+        
+        
      
     
     </style>
@@ -62,10 +78,10 @@ User Story #15: My product landing page should utilize CSS flexbox at least once
 
 </head>
     
-    <div id="cf">
-  <img class="top" src="https://EzekielCarvalho.github.io/images_page/first.png" />
-  <img class="bottom" src="https://EzekielCarvalho.github.io/images_page/second.png" />
-</div>
+    <section>
+  <img class="bottom" style="margin: auto" style="width: 100%" src="https://EzekielCarvalho.github.io/images_page/second.png" />
+  <img class="top"  src="https://EzekielCarvalho.github.io/images_page/first.png" />
+</section>
     
 
     
