@@ -42,9 +42,9 @@ section {
 
 section img {
   position: absolute;
-    margin: auto;
-    width: auto;
-    height: auto;
+  width: auto ;
+  max-width: 100% ;
+  height: auto ;;
 }
         
 .top {
@@ -70,38 +70,22 @@ section img {
   }
 }
        
-        @media (max-width: 480px) {
-  .top {
+
+ @media (max-width: 480px) {
+  #top {
     background-image: url(mobile.png);
     background-repeat: no-repeat;
     background-size: contain ;
   }
 }
 @media (min-width: 481px) {
-  .top {
+  #bottom {
     background-image: url(desktop.png);
     background-repeat: no-repeat;
     background-size: contain ;
   }
-}
-        
-@media screen and ( max-width: 1024px ) {
-img.top { width: 200px; }
-}
-@media screen and ( min-width: 1025px) {
-img.top { width: 300px;}
-}
-img.top { height: auto; }
-}
-  
-        
-@media screen and ( max-width: 1024px ) {
-img.bottom { width: 200px; }
-}
-@media screen and ( min-width: 1025px) {
-img.bottom { width: 300px;}
-}
-img.bottom { height: auto; }
+}       
+
      
     
     </style>
