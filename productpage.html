@@ -36,7 +36,17 @@ User Story #15: My product landing page should utilize CSS flexbox at least once
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
+<link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    
     <style>
+        
+
+        
+        img{
+  max-width: 100%;
+        height: auto;  
+        }
+
         
         * {
   box-sizing: border-box;
@@ -55,21 +65,31 @@ User Story #15: My product landing page should utilize CSS flexbox at least once
   display: table;
 }
  
-        reselller {
-             position: absolute;
-  width: 100% ;
-  max-width: 100% ;
-  height: auto ;
+        reseller {
+ 
+  max-width: 100%;
+        height: auto; 
+        }
+        
+        .features {font-family: 'Acme', sans-serif;
+            font-size: 2vw;
+        word-spacing: 5px;}
+        
+        .technicals {
+            
+           font-family: 'Acme', sans-serif;
+            font-size: 2vw;
+            
         }
         
 body {
- 
+font-family: 'Acme', sans-serif;
   margin: 0;
-  font-size: 28px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2vw;
+font-family: 'Acme', sans-serif;
 }
 
-.header {
+header {
   background-color: #f1f1f1;
   padding: 30px;
   text-align: center;
@@ -80,7 +100,8 @@ body {
   overflow: hidden;
   background-color: #adadad;
       padding: 10px;
-  box-shadow: 5px 10px 8px #888888;
+    word-spacing: 3px;
+    z-index:1;
 }
 
 #navbar a {
@@ -88,9 +109,10 @@ body {
   display: block;
   color: #000000;
   text-align: center;
-  padding: 14px 16px;
+  padding: 4px 16px;
   text-decoration: none;
-  font-size: 17px;
+font-size: 2vw;
+   font-family: 'Acme', sans-serif;
 }
 
 #navbar a:hover {
@@ -108,10 +130,12 @@ body {
   margin-left: 20px;
     margin-right: 20px;
     text-align: justify;
+    font-size: 2vw;
+font-family: 'Acme', sans-serif;
 }
 
 .sticky {
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100%;
 }
@@ -197,15 +221,53 @@ section img {
   background-repeat: no-repeat;
   background-size: 55% auto;
 }   
-    
+        
+        .parallaxfour {
+  /* The image used */
+  background-image: url("https://swipe.ua/content/images/31/iphone_5s_16gb_space_gray-53085618631329.jpg");
+
+  /* Set a specific height */
+  min-height: 800px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 55% auto;
+}   
+        
+        .video-container {
+  text-align: center;
+}
+   
+        @media screen and (max-width: 560px) {
+        
+.video-container {
+position: relative;
+padding-bottom: 56.25%;
+padding-top: 30px; height: 0; overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+        }
+        
     </style>
 
-  <title>Carvalho Technologies - iPhone 5s</title>
+  <title>Carvalho Tech. - iPhone 5s</title>
 
 </head>
     
    <section>
-  <img class="bottom" style="height:auto" src="https://EzekielCarvalho.github.io/images_page/secondimage.png" />
+  <img class="bottom" style="max-width: 100%;
+        height: auto;" src="https://EzekielCarvalho.github.io/images_page/secondimage.png" />
   <img class="top" style="height: auto" src="https://EzekielCarvalho.github.io/images_page/first.png" />
 </section> 
     
@@ -214,20 +276,25 @@ section img {
 
 <body>
     
-<div class="header">
-<img class="reseller" style="height:auto" src="https://www.stonegroup.co.uk/wp-content/uploads/2018/11/Apple-Authorised-Reseller-300x300.png" />
-</div>
+<header>
+<img class="reseller" style="    
+   width: 100%;
+  max-width: 250px;
+  height: auto;
+" src="https://www.stonegroup.co.uk/wp-content/uploads/2018/11/Apple-Authorised-Reseller-300x300.png" />
+</header>
 
 <div id="navbar">
   <a class="active" href="javascript:void(0)">Home</a>
   <a href="javascript:void(0)">Features</a>
   <a href="javascript:void(0)">Pricing</a>
-  <a href="javascript:void(0)">Order</a>
+
   <a href="javascript:void(0)">About Us</a>
-<a href="javascript:void(0)">Terms of Purchase</a>
-<a href="javascript:void(0)">Privacy</a>
+
   <a href="javascript:void(0)">Contact Us</a>
 </div>
+    
+  <div class="parallaxfour"></div>  
 
 <div class="content">
   <h3>The iPhone 5S</h3> 
@@ -241,6 +308,8 @@ section img {
     <h4>Greatly chic, though Competent</h4>
 
 <p>This iPhone was released in 2013. Yes, even though, unfortunately, this iPhone has ceased in it's production by Apple, we are nevertheless keen on not ceasing to keep this wonderful phone from the public's hands because of the yet amazing features that this phone possesses. <br> <br> </p>
+
+<hr>
    
 <div class="row">
   <div class="column">
@@ -253,7 +322,9 @@ section img {
     <img src="http://g-ec2.images-amazon.com/images/G/31/electronics/aplus/B00FXLCD38.05.jpg" alt="features" style="width:100%">
   </div>
 </div>
-    
+
+<hr>
+
 <p>Amazingly powered by the A7 processor with M7 Motion Coprocessor, this 64-bit Smartphone comes packed with enough performance in a wonderfully thin and light design. With its iOS 8 Operating System (OS), the Apple iPhone 5s – 16 GB lets you enjoy endless multitasking and smooth operating experience, just like a personal computer to a high degree. The phone enables you to add remarkable apps in your smartphone to make your life straightforward and easy. It is equipped with a bright 10.16 cm (4) LED backlit retina display that delivers an advanced viewing and gaming feel.</p>
 
 <h4>Become a novice photographer or advance your existing skills in photography</h4>
@@ -267,7 +338,7 @@ section img {
     
 <p>Worried about storing and securing all those important photos, videos and files that you create with this amazing iPhone or even if you move files from your computer into the phone? We've got that covered as well, with the built in SSD (Solid State Drive) that this iPhone offers, you need not worry about losing your files as compared to a computer's HDD (Hard Disk Drive). You can enjoy endless joy with this storage device and at an opportune time, safely transfer these files to your computer. </p> <br> 
 
-<p>Wondering where does this smartphone get its power from? This smartphone has a built-in rechargeable Lithium-ion battery which makes it more reliable and user-friendly. Fearing that this smartphone may not be well equipped in terms of security and password protection? Fear not! This Smartphone includes an ingenious Touch ID technology to give you a safe access to the smartphone through your fingerprints.</p>
+<p>Wondering where does this smartphone get its power from? This smartphone has a built-in rechargeable Lithium-ion battery which makes it more reliable and user-friendly. Fearing that this smartphone may not be well equipped in terms of security and password protection? Fear not! This Smartphone includes an ingenious Touch ID technology to give you a safe access to the smartphone through your fingerprints.</p> <br>
     
 <p>What makes this advanced smartphone from Apple distinct from other phones is its precision construction mark in a sleek glass and metal golden colour aluminium casing. A sapphire crystal is fitted on the home button as well as near the iSight camera for protecting it. The sleek and light device measures 7.6mm in thickness and is great for one-handed use. You can choose from stunning shades like gold, silver and space grey.</p>
  
@@ -275,16 +346,19 @@ section img {
 
 <div class="parallax"></div>
 
-<div style="height:100% auto;background-color:#adadad;font-size:20px;
+<div style="height:100% auto;background-color:#adadad;font-size: 2vw;
     padding-left: 30px;
   padding-right: 30px;
     text-align: justify;"><br>
     
 <h3>FEATURES</h3>
 <h4>Here are the features of this amazing smartphone in detail:</h4><br>
-
+ 
+<div class="video-container"><iframe width="560" height="315" style="padding:25px;" src="https://www.youtube.com/embed/ljKg7mvld2M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" align="right" allowfullscreen></iframe>
+    </div>
 <h5>iPhone 5S Hardware</h5>
     
+<div class="features">
 <ol>
 <li><strong>Ringer/Mute Switch:</strong> This small switch on the side of the iPhone lets you put it into silent mode, so you can receive calls with the ringer muted.</li><br>
 <li><strong>Antennas:</strong> There are a number of thin lines along the sides of the 5S, mostly near corners (only one is marked on the diagram). These are the externally visible parts of the antennas that the iPhone uses to connect to cellular networks. As with other recent models, the 5S has two antennas for greater call reliability.</li><br>
@@ -319,20 +393,24 @@ Making FaceTime video calls from your phone to any other Apple iPhone is a breez
     
     </ol>
     </div>
+    </div>
     
 <div class="parallaxtwo"></div>
 
 <div style="height:100% auto;background-color:white;font-size:20px;
     padding-left: 30px;
   padding-right: 30px;
-    text-align: justify;">
+    text-align: justify;
+            font-size: 2vw;">
 
 
 <h4>Brief technical details:</h4>
 
 <h5>Note: The following information can have inaccuracies. It is best to contact the seller for exact details.</h5>
     
-    <p class="technicals"><strong><ul>NETWORK</ul> </strong>	<strong><em><li>Technology</li> </em> </strong> 	
+    <hr>
+    
+    <p><strong><ul>NETWORK</ul> </strong>	<strong><em><li>Technology</li> </em> </strong> 	
 GSM / CDMA / HSPA / EVDO / LTE <br> <br>
     
 <em><li><strong>2G bands</strong> <br></li> </em>	GSM 850 / 900 / 1800 / 1900 - all models
@@ -356,6 +434,8 @@ GSM / CDMA / HSPA / EVDO / LTE <br> <br>
     <img src="https://www.imore.com/sites/imore.com/files/styles/w830/public/field/image/2013/09/iphone_5s_gallery_comparisons_hero_4.jpg?itok=s0p3JLEn" alt="threesideviews" style="width:100%">
   </div>
 </div>
+        
+        <div class="technicals">
         <strong><ul>LAUNCH </ul></strong>	<em><li><strong>Announced</strong><br></li> </em>	2013, September<br><br>
 <em><li><strong>Status</strong><br></li> </em>	Available. Released 2013, September<br><br>
         
@@ -430,15 +510,21 @@ GSM / CDMA / HSPA / EVDO / LTE <br> <br>
         
         
 <strong><ul>MISC</ul></strong>	<em><li><strong>Colors</strong><br></li> </em>	Space Gray, White/Silver, Gold<br><br>
-
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/GrHUTadzgbM", "https://www.youtube.com/watch?v=wCrkisajOog" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen align="right";></iframe>
+<div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/GrHUTadzgbM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen align="right";></iframe>
+    
+        </div>
+    
 <em><li><strong>Models</strong><br>	</li> </em>A1453, A1457, A1518, A1528, A1530, A1533<br><br>
-        
         
 <em><li><strong>SAR</strong><br></li> </em>	1.12 W/kg (head)     1.18 W/kg (body)    <br><br>
 <em><li><strong>SAR EU</strong><br></li> </em>	1.00 W/kg (head)     0.80 W/kg (body)    <br><br>
 <em><li><strong>Price</strong><br></li> </em>	About 330 EUR<br><br>
-<strong><ul>TESTS</ul></strong>	<br><em><li><strong>Performance</strong><br></li> </em>	Basemark X: 14341<br><br>
+<strong><ul>TESTS</ul></strong>	<br><em><li><strong>Performance</strong><br></li> </em>	
+<div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/wCrkisajOog" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen align="right";></iframe>
+            </div>
+Basemark X: 14341<br><br>
+        
+        
 <em><li><strong>Display</strong><br></li> </em>	Contrast ratio: 1219:1 (nominal) / 3.565:1 (sunlight)<br><br>
 <em><li><strong>Camera</strong><br>	</li> </em>Photo / Video<br><br>
 <em><li><strong>Loudspeaker</strong><br></li> </em>	Voice 68dB / Noise 66dB / Ring 69dB<br><br>
@@ -446,14 +532,14 @@ GSM / CDMA / HSPA / EVDO / LTE <br> <br>
 <em><li><strong>Battery life</strong><br></li> </em>	
 Endurance rating 54h<br><br>
     
-    </p>
+    
 
 </div>
-    
+    </p>
     
 <div class="parallaxthree"></div>
 
-<div style="height:100% auto;background-color:#adadad;font-size:20px;
+<div style="height:100% auto;background-color:#adadad;font-size: 2vw;
     padding-left: 30px;
   padding-right: 30px;
     text-align: justify;">
@@ -464,9 +550,7 @@ Tip: Try to remove the background-attachment property to remove the scrolling ef
     
     <main>
     
-        <header>
-        
-        </header>
+
         
     </main>
   <script>
