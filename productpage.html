@@ -40,7 +40,38 @@ User Story #15: My product landing page should utilize CSS flexbox at least once
     
     <style>
         
+   .parallax-section {
+               position: relative;
+                width: 100%;
+                height:700px;
+            }
+            .parallax-child-section {
+                clip: rect(0, auto, auto, 0);
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height:700px;
+            }
 
+            #frontlashID{
+                position: fixed;
+                display: block;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                transform: translateZ(0);
+                will-change: transform;
+                z-index: 1;
+            }
+            .fw-main-row{
+                background-attachment:scroll;
+                background-image: url("https://www.lifewire.com/thmb/GJSBYVIRG6BRuIYrkXt9w6yMH6g=/768x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/iphone5-ios8-56a5352e3df78cf77286eecf.jpg");
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
         
         img{
   max-width: 100%;
@@ -272,26 +303,6 @@ width: 100%;
 height: 100%;
 }
         }
-        
-@media screen and (max-device-width: 860px){
- 
-.parallax{
-background-image: url("https://EzekielCarvalho.github.io/images_page/parallax.png");
-}
- 
-.parallaxtwo{
-background-image: url("https://EzekielCarvalho.github.io/images_page/parallaxtwo.png");
-}
- 
-.parallaxthree{
-background-image: url("https://EzekielCarvalho.github.io/images_page/parallaxthree.png");
-}
- 
-.parallaxfour{
-background-image: url("https://EzekielCarvalho.github.io/images_page/parallaxfour.png");
-}
- 
-}
         
     </style>
 
@@ -580,6 +591,12 @@ Endurance rating 54h<br><br>
 Scroll Up and Down this page to see the parallax scrolling effect.
 This div is just here to enable scrolling.
 Tip: Try to remove the background-attachment property to remove the scrolling effect.
+</div>
+        
+<div class="parallax-section">
+    <div class="parallax-child-section">
+        <section class="fw-main-row" id="frontlashID"></section>
+    </div>
 </div>
     
     <main>
