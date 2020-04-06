@@ -40,38 +40,7 @@ User Story #15: My product landing page should utilize CSS flexbox at least once
     
     <style>
         
-   .parallax-section {
-               position: relative;
-                width: 100%;
-                height:700px;
-            }
-            .parallax-child-section {
-                clip: rect(0, auto, auto, 0);
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height:700px;
-            }
 
-            #frontlashID{
-                position: fixed;
-                display: block;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                transform: translateZ(0);
-                will-change: transform;
-                z-index: 1;
-            }
-            .fw-main-row{
-                background-attachment:scroll;
-                background-image: url("https://www.lifewire.com/thmb/GJSBYVIRG6BRuIYrkXt9w6yMH6g=/768x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/iphone5-ios8-56a5352e3df78cf77286eecf.jpg");
-                background-position: center center;
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
         
         img{
   max-width: 100%;
@@ -191,6 +160,7 @@ font-family: 'Acme', sans-serif;
         
 .parallax {
   /* The image used */
+    
   background-image: url("https://www.lifewire.com/thmb/GJSBYVIRG6BRuIYrkXt9w6yMH6g=/768x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/iphone5-ios8-56a5352e3df78cf77286eecf.jpg");
 
   /* Set a specific height */
@@ -592,12 +562,6 @@ Scroll Up and Down this page to see the parallax scrolling effect.
 This div is just here to enable scrolling.
 Tip: Try to remove the background-attachment property to remove the scrolling effect.
 </div>
-        
-<div class="parallax-section">
-    <div class="parallax-child-section">
-        <section class="fw-main-row" id="frontlashID"></section>
-    </div>
-</div>
     
     <main>
     
@@ -618,5 +582,26 @@ function myFunction() {
   }
 }
     </script>
+        
+        <script>
+        <script>
+ 
+var isiOS = /iPhone|iPad|iPod/i.test(navigator.userAgent)
+ 
+"
+"
+if (!isiOS){
+ window.addEventListener('scroll', function(){ // on page scroll
+  requestAnimationFrame(parallaxbubbles) // call parallaxbubbles() on next available screen paint
+ }, false)
+ 
+ window.addEventListener('resize', function(){ // on window resize
+  var scrolltop = window.pageYOffset // get number of pixels document has scrolled vertically
+  var scrollamount = (scrolltop / (scrollheight-windowheight)) * 100 // get amount scrolled (in %)
+  fish.style.left = -100 + scrollamount + '%' // set position of fish in percentage (starts at -100%)
+ }, false)
+}
+</script>
+        </script>
 </body>
 </html>
