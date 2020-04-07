@@ -40,11 +40,13 @@ User Story #15: My product landing page should utilize CSS flexbox at least once
     
     <style>
         
-
+        .pricingheadline {
+            
+        }
         
         img{
   max-width: 100%;
-        height: auto;  
+        height: 100%;  
         }
 
         
@@ -57,6 +59,55 @@ User Story #15: My product landing page should utilize CSS flexbox at least once
   width: 33.33%;
   padding: 5px;
 }
+        
+.columns {
+  float: left;
+  width: 33.33%;
+  padding: 8px;
+}
+
+.price {
+  list-style-type: none;
+  border: 1px solid #eee;
+    background-color: white;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.price:hover {
+  box-shadow: 0 15px 20px 0 rgb(0, 0, 0)
+}
+
+.price .header {
+  background-color: grey;
+  color: #000000;
+  font-size: 25px;
+}
+
+.price li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+.price .grey {
+  background-color: #eee;
+  font-size: 20px;
+}
+
+.button {
+  background-color: grey;
+  border: none;
+  color: #000000;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+
 
 /* Clearfix (clear floats) */
 .row::after {
@@ -84,7 +135,8 @@ User Story #15: My product landing page should utilize CSS flexbox at least once
         
 body {
 font-family: 'Acme', sans-serif;
-  margin: 0;
+  margin-left: auto;
+    margin-right: auto;
   font-size: 2vw;
 font-family: 'Acme', sans-serif;
 }
@@ -102,7 +154,7 @@ header {
     word-spacing: 3px;
    background: #adadad;
 	padding: 15px 0;
-	margin-bottom: 20px;
+	margin-bottom: auto;
 	color: #fff;
 	font-size: 18px;
 	box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
@@ -122,7 +174,7 @@ header {
   display: block;
   color: #000000;
   text-align: center;
-  padding: 4px 16px;
+  padding: 2px 16px;
   text-decoration: none;
 font-size: 2vw;
    font-family: 'Acme', sans-serif;
@@ -162,6 +214,7 @@ font-family: 'Acme', sans-serif;
   /* The image used */
     
   background-image: url("https://www.lifewire.com/thmb/GJSBYVIRG6BRuIYrkXt9w6yMH6g=/768x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/iphone5-ios8-56a5352e3df78cf77286eecf.jpg");
+    
 
   /* Set a specific height */
   min-height: 500px; 
@@ -225,7 +278,7 @@ section img {
         
 .parallaxthree {
   /* The image used */
-  background-image: url("https://www.imore.com/sites/imore.com/files/styles/w830/public/field/image/2013/09/iphone_5s_gallery_comparisons_hero_14.jpg?itok=VxOHqrRr");
+  background-image: url("https://www.gizbot.com/images/2013-09/apple-iphone-5s_1378895572140.jpg") ; 
 
   /* Set a specific height */
   min-height: 800px; 
@@ -234,7 +287,9 @@ section img {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 55% auto;
+  background-size: 65% auto;
+    
+
 }   
         
         .parallaxfour {
@@ -248,12 +303,58 @@ section img {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 55% auto;
+  background-size: 50% auto;
 }   
         
         .video-container {
   text-align: center;
 }
+        
+.parallaxfive {
+  /* The image used */
+    
+  background-image: url("https://www.suitsmen.co.uk/suit-images/info-1x/mens-evening-tail-jacket-1.jpg");
+    
+
+  min-height: 800px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position:top;
+  background-repeat: no-repeat;
+  background-size: 45% auto;
+    
+}   
+        
+.parallaxsix {
+  /* The image used */
+    
+  background-image: url("https://lawware.co.uk/wp-content/uploads/2016/06/terms-and-conditions-750x400.jpeg");
+    
+
+  min-height: 800px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position:top;
+  background-repeat: no-repeat;
+  background-size: 85% auto;
+}   
+        
+.parallaxseven {
+  /* The image used */
+    
+  background-image: url("https://www.wanderglobe.org/wp-content/uploads/2018/05/Network-Engineer-Jobs.jpg");
+    
+
+  min-height: 800px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position:top;
+  background-repeat: no-repeat;
+  background-size: 85% auto;
+}   
    
         @media screen and (max-width: 560px) {
         
@@ -274,25 +375,120 @@ height: 100%;
 }
         }
         
-@media screen and (max-device-width: 860px){
- 
-.parallax{
-background-image: url("https://EzekielCarvalho.github.io/images_page/parallax.png");
-}
- 
-.parallaxtwo{
-background-image: url("https://EzekielCarvalho.github.io/images_page/parallaxtwo.png");
-}
- 
-.parallaxthree{
-background-image: url("https://EzekielCarvalho.github.io/images_page/parallaxthree.png");
-}
- 
-.parallaxfour{
-background-image: url("https://EzekielCarvalho.github.io/images_page/parallaxfour.png");
-}
+
  
 }
+    
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+  .parallax {
+  /* The image used */
+    
+  background-image: url("https://EzekielCarvalho.github.io/images_page/parallax.png");
+
+  /* Set a specific height */
+  min-height: auto; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 55% auto;
+ margin-top: 0;
+width: auto ;
+  max-width: 100% ;
+  height: auto ; 
+        }
+
+  }
+
+        
+        
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .parallax {
+  /* The image used */
+    
+  background-image: url("https://EzekielCarvalho.github.io/images_page/parallax.png");
+
+  /* Set a specific height */
+  min-height: auto; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 55% auto;
+ margin-top: 0;
+width: auto ;
+  max-width: 100% ;
+  height: auto ; 
+        }
+
+  }
+        
+        
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)  { .parallaxtwo {
+  /* The image used */
+    
+  background-image: url("https://EzekielCarvalho.github.io/images_page/parallaxtwo.png");
+
+  /* Set a specific height */
+  min-height: auto; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 55% auto;
+ margin-top: 0;
+width: auto ;
+  max-width: 100% ;
+  height: auto ; 
+        }
+
+  }
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) { .parallaxtwo {
+  /* The image used */
+    
+  background-image: url("https://EzekielCarvalho.github.io/images_page/parallaxtwo.png");
+
+  /* Set a specific height */
+  min-height: auto; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 55% auto;
+ margin-top: 0;
+width: auto ;
+  max-width: 100% ;
+  height: auto ; 
+        }
+
+  }
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation : portrait) { .parallaxthree {
+  /* The image used */
+    
+  background-image: url("https://EzekielCarvalho.github.io/images_page/parallaxthree.png");
+
+  /* Set a specific height */
+  min-height: auto; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 55% auto;
+ margin-top: 0;
+width: auto ;
+  max-width: 100% ;
+  height: auto ; 
+        }
+
+  }
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation : landscape) {}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation : portrait) {}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation : landscape) {}
         
     </style>
 
@@ -325,6 +521,10 @@ background-image: url("https://EzekielCarvalho.github.io/images_page/parallaxfou
   <a href="javascript:void(0)">Pricing</a>
 
   <a href="javascript:void(0)">About Us</a>
+    
+      <a href="javascript:void(0)">Terms & Conditions</a>
+    
+      <a href="javascript:void(0)">Privacy</a>
 
   <a href="javascript:void(0)">Contact Us</a>
 </div>
@@ -475,7 +675,8 @@ GSM / CDMA / HSPA / EVDO / LTE <br> <br>
         <div class="technicals">
         <strong><ul>LAUNCH </ul></strong>	<em><li><strong>Announced</strong><br></li> </em>	2013, September<br><br>
 <em><li><strong>Status</strong><br></li> </em>	Available. Released 2013, September<br><br>
-        
+    
+        <img src="https://www.gizbot.com/images/2013-09/apple-iphone-5s_137889557290.jpg" alt="iphone with squirrel" width="500" height="500" align="right">
         
 <ul>BODY</ul>	<em><li><strong>Dimensions</strong><br></li> </em>	123.8 x 58.6 x 7.6 mm (4.87 x 2.31 x 0.30 in)<br><br>
         
@@ -569,21 +770,144 @@ Basemark X: 14341<br><br>
 <em><li><strong>Battery life</strong><br></li> </em>	
 Endurance rating 54h<br><br>
     
-    
+    <hr>
 
 </div>
     </p>
     
 <div class="parallaxthree"></div>
 
-<div style="height:100% auto;background-color:#adadad;font-size: 2vw;
-    padding-left: 30px;
-  padding-right: 30px;
-    text-align: justify;">
-Scroll Up and Down this page to see the parallax scrolling effect.
-This div is just here to enable scrolling.
-Tip: Try to remove the background-attachment property to remove the scrolling effect.
+<h2 class="pricingheadline" style="text-align:center">Responsive Pricing Tables</h2>
+<p style="text-align:center">Resize the browser window to see the effect.</p>
+
+<div class="columns">
+  <ul class="price">
+    <li class="header">Basic</li>
+    <li class="grey">$ 9.99 / year</li>
+    <li>10GB Storage</li>
+    <li>10 Emails</li>
+    <li>10 Domains</li>
+    <li>1GB Bandwidth</li>
+    <li class="grey"><a href="#" class="button">Sign Up</a></li>
+  </ul>
 </div>
+
+<div class="columns">
+  <ul class="price">
+    <li class="header" style="background-color:grey">Pro</li>
+    <li class="grey">$ 24.99 / year</li>
+    <li>25GB Storage</li>
+    <li>25 Emails</li>
+    <li>25 Domains</li>
+    <li>2GB Bandwidth</li>
+    <li class="grey"><a href="#" class="button">Sign Up</a></li>
+  </ul>
+</div>
+
+<div class="columns">
+  <ul class="price">
+    <li class="header">Premium</li>
+    <li class="grey">$ 49.99 / year</li>
+    <li>50GB Storage</li>
+    <li>50 Emails</li>
+    <li>50 Domains</li>
+    <li>5GB Bandwidth</li>
+    <li class="grey"><a href="#" class="button">Sign Up</a></li>
+  </ul>
+</div>
+
+        
+<hr>
+
+
+<Strong><h4>About us</h4></Strong>
+
+<article>
+        <p>Carvalho Technologies Ltd., founded in 2020, is a partnership business between Ezekiel & Elijah Carvalho working in link with Apple Technologies LLC USA and is located in Chelmsford, England, UK.
+    The partners originally from Lisbon, Portugal were keen on furthering their Business Administration careers shortly after completing graduation and have thus been successful with selling over 10 iPhones per day since January, ever since the inception of their business, all the while emplyoing expert marketing skills and faculties to attract and appeal an even greater crowd.</p>
+    
+    <p>Ezekiel & Elijah moved to the UK from Portugal shortly after starting and ending a small personal private business in Portugal of selling second hand phones to the public. With the success of their business ventures as young teenagers, on completion of their graduation and studies into IT, they thought it best to move to the UK to start a new business afresh with the official partnership of Apple, USA.</p>
+    
+    <p>Both partners continue to endeavour to sell and further their marketing of the apple iPhone 5s and are considering of adding other apple products into their sale as perks. They also endeavour to add additional apple iPhones and MacBooks into their sales in due course.</p>
+    
+        </article>
+        <hr>
+        
+    <div class="parallaxfive"></div>
+
+<div style="height:100% auto;background-color:#adadad; font-size:20px;
+
+    text-align: justify;
+            font-size: 2vw;">
+    
+
+
+    <hr>
+    
+    
+  <strong>  <h4>Terms & Conditions</h4> </strong>
+
+    <article> <ul> <li>
+        Goods once sold will not be taken back nor exchanged. So please ensure that you choose the right product.
+        </li> <br>
+        
+        <li>
+        Goods that are found to be defective have to be returned to the store within 24hrs of purchase of the product.
+        </li> <br>
+        <li>
+        All products sold will have a warranty of 1 year that is extendable on request on further payment of warranty certificates that would be issued from Apple.</li> <Br>
+            <li>Warranty does not cover damages that are inflicted as a result of ones own negligence which is not limited to dropping the phone, or spilling water or other liquids onto the phone, deliberate mismanagement and mishandling of the products etc.</li> <br>
+        <li>All iPhones sold will be sold at an all inclusive price, completely inclusive of taxes imposed by the UK Government.</li> <br>
+        <li>Payments made via credit/ debit cards will incur a 2.5% service charge fee, so customers are advised to choose their payment method judiciously.</li> <br>
+        
+        </ul> </article>
+
+    
+    <div class="parallaxsix"></div>
+
+<div style="height:100% auto;background-color:white;font-size:20px;
+
+    text-align: justify;
+            font-size: 2vw;">
+    
+     <h4>Brief technical details:</h4>
+
+<h5>Note: The following information can have inaccuracies. It is best to contact the seller for exact details.</h5>
+    
+        <h4>Brief technical details:</h4>
+
+<h5>Note: The following information can have inaccuracies. It is best to contact the seller for exact details.</h5>   
+    
+     <h4>Brief technical details:</h4>
+
+<h5>Note: The following information can have inaccuracies. It is best to contact the seller for exact details.</h5>
+    
+        <h4>Brief technical details:</h4>
+
+<h5>Note: The following information can have inaccuracies. It is best to contact the seller for exact details.</h5> 
+    
+        <div class="parallaxseven"></div>
+
+<div style="height:100% auto;background-color:white;font-size:20px;
+
+    text-align: justify;
+            font-size: 2vw;">
+    
+         <h4>Brief technical details:</h4>
+
+<h5>Note: The following information can have inaccuracies. It is best to contact the seller for exact details.</h5>
+    
+        <h4>Brief technical details:</h4>
+
+<h5>Note: The following information can have inaccuracies. It is best to contact the seller for exact details.</h5>   
+    
+     <h4>Brief technical details:</h4>
+
+<h5>Note: The following information can have inaccuracies. It is best to contact the seller for exact details.</h5>
+    
+        <h4>Brief technical details:</h4>
+
+<h5>Note: The following information can have inaccuracies. It is best to contact the seller for exact details.</h5> 
     
     <main>
     
@@ -605,25 +929,7 @@ function myFunction() {
 }
     </script>
         
-        
-        <script>
- 
-var isiOS = /iPhone|iPad|iPod/i.test(navigator.userAgent)
- 
-"
-"
-if (!isiOS){
- window.addEventListener('scroll', function(){ // on page scroll
-  requestAnimationFrame(parallaxbubbles) // call parallaxbubbles() on next available screen paint
- }, false)
- 
- window.addEventListener('resize', function(){ // on window resize
-  var scrolltop = window.pageYOffset // get number of pixels document has scrolled vertically
-  var scrollamount = (scrolltop / (scrollheight-windowheight)) * 100 // get amount scrolled (in %)
-  fish.style.left = -100 + scrollamount + '%' // set position of fish in percentage (starts at -100%)
- }, false)
-}
-</script>
+    
     
 </body>
 </html>
