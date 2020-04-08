@@ -36,9 +36,48 @@ User Story #15: My product landing page should utilize CSS flexbox at least once
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-<link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    
+    <link rel="shortcut icon" href="https://ezekielcarvalho.github.io/images_page/logotwo.png"/>
     
     <style>
+        
+        .aboutus {font-size:85%;}
+        
+        .brief {font-size: 85%;}
+        
+        body {font-family: 'PT Sans', sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 25px;
+  background-color: gray;
+  padding: 30px;
+}
         
         .pricingheadline {
             
@@ -122,23 +161,23 @@ User Story #15: My product landing page should utilize CSS flexbox at least once
         height: auto; 
         }
         
-        .features {font-family: 'Acme', sans-serif;
-            font-size: 2vw;
+        .features {font-family: 'PT Sans', sans-serif;
+            font-size: 85%;
         word-spacing: 5px;}
         
         .technicals {
             
-           font-family: 'Acme', sans-serif;
-            font-size: 2vw;
+           font-family: 'PT Sans', sans-serif;
+            font-size: 85%;
             
         }
         
 body {
-font-family: 'Acme', sans-serif;
+font-family: 'PT Sans', sans-serif;
   margin-left: auto;
     margin-right: auto;
   font-size: 2vw;
-font-family: 'Acme', sans-serif;
+font-family: 'PT Sans', sans-serif;
 }
 
 header {
@@ -153,7 +192,7 @@ header {
  
     word-spacing: 3px;
    background: #adadad;
-	padding: 15px 0;
+	padding: 10px 0;
 	margin-bottom: auto;
 	color: #fff;
 	font-size: 18px;
@@ -174,10 +213,10 @@ header {
   display: block;
   color: #000000;
   text-align: center;
-  padding: 2px 16px;
+  padding: 18.5px 10px;
   text-decoration: none;
-font-size: 2vw;
-   font-family: 'Acme', sans-serif;
+font-size: 85%;
+  font-family: 'PT Sans', sans-serif;
 }
 
 #navbar a:hover {
@@ -195,8 +234,8 @@ font-size: 2vw;
   margin-left: 20px;
     margin-right: 20px;
     text-align: justify;
-    font-size: 2vw;
-font-family: 'Acme', sans-serif;
+    font-size: 75%;
+font-family: 'PT Sans', sans-serif;
 }
 
 .sticky {
@@ -378,6 +417,8 @@ height: 100%;
 
  
 }
+        
+        
     
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
   .parallax {
@@ -499,14 +540,14 @@ width: auto ;
    <section>
   <img class="bottom" style="max-width: 100%;
         height: auto;" src="https://EzekielCarvalho.github.io/images_page/secondimage.png" />
-  <img class="top" style="height: auto" src="https://EzekielCarvalho.github.io/images_page/first.png" />
+  <img class="top" style="height: auto;" src="https://EzekielCarvalho.github.io/images_page/first.png" />
 </section> 
     
 
     
 
 <body>
-    
+  <main>   
 <header>
 <img class="reseller" style="    
    width: 100%;
@@ -516,7 +557,16 @@ width: auto ;
 </header>
 
 <div id="navbar">
-  <a class="active" href="javascript:void(0)">Home</a>
+    
+    <img class="" style="    
+float: left!important;
+padding-right: 20px;
+padding-left: 20px;
+" src="https://ezekielcarvalho.github.io/images_page/logotwo.png"   style="width: 100%;
+  max-width: 400px;
+  height: auto;"
+   />
+ <strong> <a class="active" href="javascript:void(0)">Home</a>
   <a href="javascript:void(0)">Features</a>
   <a href="javascript:void(0)">Pricing</a>
 
@@ -526,7 +576,7 @@ width: auto ;
     
       <a href="javascript:void(0)">Privacy</a>
 
-  <a href="javascript:void(0)">Contact Us</a>
+  <a href="javascript:void(0)">Contact Us</a></strong>
 </div>
     
   <div class="parallaxfour"></div>  
@@ -538,13 +588,13 @@ width: auto ;
     <div class="column">
     <img src="http://g-ec2.images-amazon.com/images/G/31/electronics/aplus/B00FXLCD38.04.jpg" alt="iphones" style="width:100%">
   </div>
-  <p>That's right! We've chosen the iPhone 5S as the most economical iPhone to have due to it's amazing features, and ability to install some of the latest iOS operating systems. </p><br>
+  <p>We've chosen the iPhone 5S as the most economical iPhone to have due to it's amazing features, and ability to install some of the latest iOS operating systems. </p><br> <br>
     
 <h2>HOME</h2>
 <h3>Product specifications</h3>
     <h4>Greatly chic, though Competent</h4>
 
-<p>This iPhone was released in 2013. Yes, even though, unfortunately, this iPhone has ceased in it's production by Apple, we are nevertheless keen on not ceasing to keep this wonderful phone from the public's hands because of the yet amazing features that this phone possesses. <br> <br> </p>
+<p>This iPhone was released in 2013. Even though this iPhone has ceased in it's production by Apple, we are nevertheless keen on not ceasing to keep it from the public's hands because of the yet amazing features that it possesses. <br> <br> </p>
 
 <hr>
    
@@ -562,10 +612,7 @@ width: auto ;
 
 <hr>
 
-<p>Amazingly powered by the A7 processor with M7 Motion Coprocessor, this 64-bit Smartphone comes packed with enough performance in a wonderfully thin and light design. With its iOS 8 Operating System (OS), the Apple iPhone 5s – 16 GB lets you enjoy endless multitasking and smooth operating experience, just like a personal computer to a high degree. The phone enables you to add remarkable apps in your smartphone to make your life straightforward and easy. It is equipped with a bright 10.16 cm (4) LED backlit retina display that delivers an advanced viewing and gaming feel.</p>
-
-<h4>Become a novice photographer or advance your existing skills in photography</h4>
-<p>The Apple iPhone 5S 16 GB comes with an advanced 8 MP autofocus enabled iSight primary camera with Backside illumination sensor and True Tone Flash which helps you to capture aesthetic pictures with excellent clarity and details. It helps you take excellent snapshots even in low light shooting scenarios. The phone has a 1.2 MP front camera which is excellent for clicking beautiful selfies and supports high quality video calling. This exciting smartphone also supports full HD video recording.</p>
+<p>Amazingly powered by the A7 processor with M7 Motion Coprocessor, this 64-bit Smartphone comes packed with enough performance in a wonderfully thin and light design. With its iOS 8 Operating System (OS), the Apple iPhone 5s – 16 GB lets you enjoy endless multitasking and smooth operating experience, just like a personal computer to a high degree.</p>
 
 <h4>Intuitive User-Experience Like Never Before</h4>
 
@@ -573,9 +620,9 @@ width: auto ;
     <img src="http://g-ec2.images-amazon.com/images/G/31/electronics/aplus/B00FXLCD38.01.jpg" alt="fingerscanner" style="width:100%">
   </div>
     
-<p>Worried about storing and securing all those important photos, videos and files that you create with this amazing iPhone or even if you move files from your computer into the phone? We've got that covered as well, with the built in SSD (Solid State Drive) that this iPhone offers, you need not worry about losing your files as compared to a computer's HDD (Hard Disk Drive). You can enjoy endless joy with this storage device and at an opportune time, safely transfer these files to your computer. </p> <br> 
+<p>Worried about storing and securing all those important photos, videos and files that you create with this amazing iPhone or even if you move files from your computer into the phone? We've got that covered as well, with the built in SSD (Solid State Drive) that this iPhone offers, you need not worry about losing your files as compared to a computer's HDD (Hard Disk Drive). You can enjoy endless joy with this storage device and at an opportune time, safely transfer these files to your computer. </p> 
 
-<p>Wondering where does this smartphone get its power from? This smartphone has a built-in rechargeable Lithium-ion battery which makes it more reliable and user-friendly. Fearing that this smartphone may not be well equipped in terms of security and password protection? Fear not! This Smartphone includes an ingenious Touch ID technology to give you a safe access to the smartphone through your fingerprints.</p> <br>
+<p>Wondering where does this smartphone get its power from? This smartphone has a built-in rechargeable Lithium-ion battery which makes it more reliable and user-friendly. Fearing that this smartphone may not be well equipped in terms of security and password protection? Fear not! This Smartphone includes an ingenious Touch ID technology to give you a safe access to the smartphone through your fingerprints.</p> 
     
 <p>What makes this advanced smartphone from Apple distinct from other phones is its precision construction mark in a sleek glass and metal golden colour aluminium casing. A sapphire crystal is fitted on the home button as well as near the iSight camera for protecting it. The sleek and light device measures 7.6mm in thickness and is great for one-handed use. You can choose from stunning shades like gold, silver and space grey.</p>
  
@@ -583,13 +630,13 @@ width: auto ;
 
 <div class="parallax"></div>
 
-<div style="height:100% auto;background-color:#adadad;font-size: 2vw;
+<div style="height:100% auto;background-color:#adadad;font-size: 85%;
     padding-left: 30px;
   padding-right: 30px;
     text-align: justify;"><br>
     
 <h3>FEATURES</h3>
-<h4>Here are the features of this amazing smartphone in detail:</h4><br>
+<h4>Here are the features of this amazing smartphone in detail:</h4>
  
 <div class="video-container"><iframe width="560" height="315" style="padding:25px;" src="https://www.youtube.com/embed/ljKg7mvld2M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" align="right" allowfullscreen></iframe>
     </div>
@@ -598,37 +645,23 @@ width: auto ;
 <div class="features">
 <ol>
 <li><strong>Ringer/Mute Switch:</strong> This small switch on the side of the iPhone lets you put it into silent mode, so you can receive calls with the ringer muted.</li><br>
-<li><strong>Antennas:</strong> There are a number of thin lines along the sides of the 5S, mostly near corners (only one is marked on the diagram). These are the externally visible parts of the antennas that the iPhone uses to connect to cellular networks. As with other recent models, the 5S has two antennas for greater call reliability.</li><br>
-<li><strong>Front Camera:</strong> The small dot centered above the screen and just over the speaker is one of the phone's cameras. This one is primarily used for FaceTime video calls (and selfies!). It takes 1.2-megapixel images and captures video in 720p HD.The Apple iPhone 5S takes the cake for being one of the most advanced smartphones of recent times.  </li><br>
+<li><strong>Antennas:</strong> There are a number of thin lines along the sides of the 5S, mostly near corners (only one is marked on the diagram). These are the externally visible parts of the antennas that the iPhone uses to connect to cellular networks.</li><br>
+<li><strong>Front Camera:</strong> The small dot centered above the screen and just over the speaker is one of the phone's cameras. This one is primarily used for FaceTime video calls (and selfies!). It takes 1.2-megapixel images and captures video in 720p HD. </li><br>
 <li><strong>Speaker:</strong> Just below the camera is a small opening where you listen to the audio from phone calls.</li><br>
 <li><strong>Headphone Jack:</strong> Plug your headphones in here for phone calls or to listen to music. Some accessories like car stereo cassette adapters are also attached here.</li><br>
 <li><strong>Hold Button:</strong> This button on the top of the 5S does a number of things. Clicking the button puts the iPhone to sleep or wakes it. Hold the button down for a few seconds and a slider appears onscreen that lets you turn the phone off (and — surprise! — turn it on again). If your iPhone freezes up, or you want to take a screenshot, you just need the right combination of the Hold button and Home button.</li><br>
 <li><strong>Volume Buttons:</strong> These buttons, located below the Ringer/Mute Switch, are for raising and lowering the volume of any audio playing through the 5S's headphone jack or speakers.</li><br>
 <li><strong>Home Button:</strong> This small button is central to a lot of things. On the iPhone 5S, its major new feature is Touch ID, a fingerprint scanner that unlocks the phone and authorizes secure transactions. Besides that, a single click brings you back to the home screen from any app. A double click reveals the multitasking options and lets you quit apps (or use AirPlay, on older versions of the iOS). It's also part of taking screenshots, using Siri, and restarting the iPhone.</li><br>
 <li><strong>Lightning Connector:</strong> Sync your iPhone using this port on the bottom of the 5S. The Lightning port does a lot more than that, though. It's also the way you connect your iPhone to accessories like speaker docks. Older accessories that use the larger Dock Connector need an adapter.</li><br>
-<li><strong>Speaker:</strong> There are two, mesh-covered openings at the bottom of the iPhone. One of them is the speaker that plays music, speakerphone calls, and alert sounds. If your speaker sounds quiet or distorted, try cleaning it.</li><br>
+<li><strong>Speaker:</strong> There are two, mesh-covered openings at the bottom of the iPhone. One of them is the speaker that plays music, speakerphone calls, and alert sounds.</li><br>
 <li><strong>Microphone:</strong> The other opening at the bottom of the 5S is a microphone picks up your voice for phone calls.</li><br>
-<li><strong>SIM Card:</strong> This thin slot on the iPhone's side is where the SIM (Subscriber Identity Module) card goes. A SIM card is a chip that identifies your phone when it connects to cellular networks and stores some key information, such as your phone number. A functioning SIM card is key to being able to make calls and use cellular data. It can be removed with a "SIM Card remover," better known as a paper clip. Like the iPhone 5, the 5S uses a nanoSIM.</li><br>
+<li><strong>SIM Card:</strong> This thin slot on the iPhone's side is where the SIM (Subscriber Identity Module) card goes.</li><br>
 <li><strong>Back Camera:</strong>It features an amazing camera that lets you capture some great pictures and incorporates high-quality and powerful components for a superlative performance. As for the design, it pleases anyone who’s looking for a sleek and stylish phone. The higher-quality of the two cameras, located on the back of the phone, takes 8-megapixel photos and video at 1080p HD. </li><br>
 <li><strong>Back Microphone:</strong> Near the back camera and the camera flash there's a microphone designed to capture audio when you're recording video.</li><br>
 <li><strong>Camera Flash:</strong> Pictures are made better, especially in low light, and colors are more natural thanks to the dual camera flash located on the back of the iPhone 5S and next to the back camera.</li></ol><br>
 
     
-<h5>iPhone 5S Hardware (Not Pictured)</h5>
-<ol>
-<li><strong>Apple A7 Processor:</strong> The Apple iPhone 5S is equipped with a powerful A7 processor that is based on the 64-bit architecture. The A7 chip has double the capacity of the A6 chip, which means you will be able to enjoy multimedia games with complete 3D effects. This device also delivers a faster CPU performance and enables you to multitask by launching more than a couple of applications at the same time. This processor is the first 64-bit chip used in a smartphone and was faster than the A6 chip used in the iPhone 5.</li> <br>
-<li><strong>4G LTE Chip:</strong> As with the iPhone 5, the iPhone 5S includes 4G LTE cellular networking for speedy wireless connections and high-quality calls.</li><br>
-<li><strong>Sensors:</strong> A series of sensors inside the phone — including an accelerometer and compass — are used to have the phone respond to how you hold and move it, use your location to provide directions and suggestions, and more.</li><br>
-<li><strong>Motion Detecting Coprocessor: </strong>
-    The iPhone 5S has a motion detecting coprocessor, the M7 coprocessor, that senses motion-oriented data. So when you're consulting Maps while travelling or evaluating your performance on the treadmill with the aid of workout applications, the co-processor automatically starts functioning and takes the load off the main processor. It detects when you park the car and start walking towards your destination and automatically switches from driving to walking while you are navigating. What’s more, the coprocessor recognises if the device has not been picked up for a while and reduces network usage to save on battery. </li><br>
-    
-   <li><strong> High Resolution Touchscreen</strong>
-The Apple smartphone features a 4-inch Retina multi-touch screen that gives you an enhanced visual experience. It has a high screen resolution of 1136 x 640 pixels and colour depth of 16M. The contrast ratio of the display is 800:1 and it has an oleophobic coating to withstand fingerprints. These features bring your photos, movies and videos to life and displays them with utmost clarity.</li><br>
-    
-    <li><strong> FaceTime for Video Calling</strong>
-Making FaceTime video calls from your phone to any other Apple iPhone is a breeze with the front-facing FaceTime camera. It lets you keep in touch with your friends and loved ones even if they are miles apart from you. The webcam of the iPhone 5S has larger pixels as well as a backside illumination sensor so that poor lighting conditions do not deter your web conferencing calls. It is possible to make audio-only FaceTime calls too.</li><br>
-    
-    </ol>
+
     </div>
     </div>
     
@@ -638,7 +671,7 @@ Making FaceTime video calls from your phone to any other Apple iPhone is a breez
     padding-left: 30px;
   padding-right: 30px;
     text-align: justify;
-            font-size: 2vw;">
+            font-size: 85%;">
 
 
 <h4>Brief technical details:</h4>
@@ -646,6 +679,8 @@ Making FaceTime video calls from your phone to any other Apple iPhone is a breez
 <h5>Note: The following information can have inaccuracies. It is best to contact the seller for exact details.</h5>
     
     <hr>
+    
+    <div class="brief">
     
     <p><strong><ul>NETWORK</ul> </strong>	<strong><em><li>Technology</li> </em> </strong> 	
 GSM / CDMA / HSPA / EVDO / LTE <br> <br>
@@ -671,12 +706,16 @@ GSM / CDMA / HSPA / EVDO / LTE <br> <br>
     <img src="https://www.imore.com/sites/imore.com/files/styles/w830/public/field/image/2013/09/iphone_5s_gallery_comparisons_hero_4.jpg?itok=s0p3JLEn" alt="threesideviews" style="width:100%">
   </div>
 </div>
-        
+        </div>
         <div class="technicals">
-        <strong><ul>LAUNCH </ul></strong>	<em><li><strong>Announced</strong><br></li> </em>	2013, September<br><br>
+        <strong><ul>LAUNCH </ul></strong>	<em><li>
+            
+               <img src="https://www.gizbot.com/images/2013-09/apple-iphone-5s_137889557290.jpg" alt="iphone with squirrel" width="500" height="500" align="right">
+            <strong>Announced</strong><br></li> </em>	2013, September<br><br>
+         
 <em><li><strong>Status</strong><br></li> </em>	Available. Released 2013, September<br><br>
     
-        <img src="https://www.gizbot.com/images/2013-09/apple-iphone-5s_137889557290.jpg" alt="iphone with squirrel" width="500" height="500" align="right">
+        
         
 <ul>BODY</ul>	<em><li><strong>Dimensions</strong><br></li> </em>	123.8 x 58.6 x 7.6 mm (4.87 x 2.31 x 0.30 in)<br><br>
         
@@ -774,6 +813,7 @@ Endurance rating 54h<br><br>
 
 </div>
     </p>
+        
     
 <div class="parallaxthree"></div>
 
@@ -819,7 +859,7 @@ Endurance rating 54h<br><br>
         
 <hr>
 
-
+<div class="aboutus">
 <Strong><h4>About us</h4></Strong>
 
 <article>
@@ -830,7 +870,20 @@ Endurance rating 54h<br><br>
     
     <p>Both partners continue to endeavour to sell and further their marketing of the apple iPhone 5s and are considering of adding other apple products into their sale as perks. They also endeavour to add additional apple iPhones and MacBooks into their sales in due course.</p>
     
-        </article>
+        </article></div>
+        
+        <div class="row">
+  <div class="column">
+    <img src="https://d3d00swyhr67nd.cloudfront.net/_source/ECCC_location_image_2.jpg" alt="Snow" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="https://www.portugalresident.com/wp-content/uploads/2020/03/lisboa.jpg" alt="Forest" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Chelmsford_Cathedral.jpg/800px-Chelmsford_Cathedral.jpg" alt="Mountains" style="width:100%">
+  </div>
+</div>
+
         <hr>
         
     <div class="parallaxfive"></div>
@@ -838,7 +891,7 @@ Endurance rating 54h<br><br>
 <div style="height:100% auto;background-color:#adadad; font-size:20px;
 
     text-align: justify;
-            font-size: 2vw;">
+            font-size: 85%;">
     
 
 
@@ -868,7 +921,7 @@ Endurance rating 54h<br><br>
 <div style="height:100% auto;background-color:white;font-size:20px;
 
     text-align: justify;
-            font-size: 2vw;">
+            font-size: 85%;">
     
      <h4>Brief technical details:</h4>
 
@@ -890,30 +943,40 @@ Endurance rating 54h<br><br>
 
 <div style="height:100% auto;background-color:white;font-size:20px;
 
-    text-align: justify;
-            font-size: 2vw;">
+    text-align:left;
+            font-size: 85%;"> </div>
     
-         <h4>Brief technical details:</h4>
+<h3>Contact Form</h3>
 
-<h5>Note: The following information can have inaccuracies. It is best to contact the seller for exact details.</h5>
-    
-        <h4>Brief technical details:</h4>
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">First-Name </label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
-<h5>Note: The following information can have inaccuracies. It is best to contact the seller for exact details.</h5>   
-    
-     <h4>Brief technical details:</h4>
+    <label for="lname">Last-Name </label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
-<h5>Note: The following information can have inaccuracies. It is best to contact the seller for exact details.</h5>
-    
-        <h4>Brief technical details:</h4>
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
 
-<h5>Note: The following information can have inaccuracies. It is best to contact the seller for exact details.</h5> 
-    
-    <main>
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+    <div class="video-container" style="margin-top: 5vw; text-align: left">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2470.887276328496!2d0.46855866671373464!3d51.735097095138045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s!2sBurgess%20Springs!5e0!3m2!1sen!2sin!4v1586276507821!5m2!1sen!2sin" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+   
     
 
         
-    </main>
+   
   <script>
     window.onscroll = function() {myFunction()};
 
@@ -929,7 +992,7 @@ function myFunction() {
 }
     </script>
         
-    
+     </main>
     
 </body>
 </html>
