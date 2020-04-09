@@ -57,11 +57,12 @@ User Story #15: My product landing page should utilize CSS flexbox at least once
   height: auto;
           border-radius: 25px;
           margin-top: 5%;
+           justify-content: center;
 }
 
 .flex-container > div {
   background-color: #f1f1f1;
-    align
+
   width: 100%;
   max-width: 400px;
   height: 100% auto;
@@ -69,7 +70,7 @@ User Story #15: My product landing page should utilize CSS flexbox at least once
   text-align: center;
   line-height: 100%;
     outline-width: inherit;
-  font-size: 30px;
+  font-size: 20px;
 }  
         
   
@@ -121,6 +122,17 @@ input[type=submit] {
   cursor: pointer;
         }
 input[type=email] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+        
+        input[type=number] {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -630,17 +642,17 @@ padding-left: 20px;
   max-width: 400px;
   height: auto;"
    />
- <strong> <a class="active" href="#Home">Home</a>
-  <a href="javascript:void(0)">Features</a>
-  <a href="javascript:void(0)">Pricing</a>
+ <strong> <a href="#home">Home</a>
+  <a href="#features">Features</a>
+  <a href="#pricing">Pricing</a>
 
-  <a href="javascript:void(0)">About Us</a>
+  <a href="#aboutus">About Us</a>
     
-      <a href="javascript:void(0)">Terms & Conditions</a>
+      <a href="#termsandconditions">Terms & Conditions</a>
     
-      <a href="javascript:void(0)">Privacy</a>
+      <a href="#privacy">Privacy</a>
 
-  <a href="javascript:void(0)">Contact Us</a></strong>
+  <a href="#contact">Contact Us</a></strong>
 </div>
     
   <div class="parallaxfour"></div>  
@@ -654,11 +666,11 @@ padding-left: 20px;
   </div>
   <p>We've chosen the iPhone 5S as the most economical iPhone to have due to it's amazing features, and ability to install some of the latest iOS operating systems. </p>
     
-<div id="Home"></div> 
+<div id="home"></div> <br> 
     
-<h2>Home</h2>
-<h3>Product specifications</h3>
-    <h4>Greatly chic, though Competent</h4>
+<h3>Home</h3>
+<h4>Product specifications</h4>
+    <h5>Greatly chic, though Competent</h5>
 <ul><li>
 <p>This iPhone was released in 2013. Even though this iPhone has ceased in it's production by Apple, we are nevertheless keen on not ceasing to keep it from the public's hands because of the yet amazing features that it possesses. <br> <br> </p> </li></ul>
 
@@ -681,7 +693,7 @@ padding-left: 20px;
     <li>
 <p>Amazingly powered by the A7 processor with M7 Motion Coprocessor, this 64-bit Smartphone comes packed with enough performance in a wonderfully thin and light design. With its iOS 8 Operating System (OS), the Apple iPhone 5s – 16 GB lets you enjoy endless multitasking and smooth operating experience, just like a personal computer to a high degree.</p></li>
 
-<h4>Intuitive User-Experience Like Never Before</h4>
+<h5>Intuitive User-Experience Like Never Before</h5>
 
   <div class="column">
 <img src="http://g-ec2.images-amazon.com/images/G/31/electronics/aplus/B00FXLCD38.01.jpg" alt="fingerscanner" style="width:100%;" >
@@ -702,6 +714,8 @@ padding-left: 20px;
     padding-left: 30px;
   padding-right: 30px;
     text-align: justify;"><br>
+  
+    <div id="features"></div> 
     
 <h3>Features</h3>
 <h4>Here are the features of this amazing smartphone in detail:</h4>
@@ -884,8 +898,10 @@ Endurance rating 54h<br><br>
         
     
 <div class="parallaxthree"></div>
+        
+        <div id="pricing"></div> 
 
-<h2 class="pricingheadline" style="text-align:center">Responsive Pricing Tables</h2>
+<h3 class="pricingheadline" style="text-align:center">Pricing</h3>
 <p style="text-align:center">Resize the browser window to see the effect.</p>
 
 <div class="columns">
@@ -925,10 +941,11 @@ Endurance rating 54h<br><br>
 </div>
 
         
-<hr>
-
+<hr><br> <br>
+<div id="aboutus"></div> 
+        
 <div class="aboutus">
-<Strong><h4>About us</h4></Strong>
+<Strong><h3>About us</h3></Strong>
 
 <article>
         <p>Carvalho Technologies Ltd., founded in 2020, is a partnership business between Ezekiel & Elijah Carvalho working in link with Apple Technologies LLC USA and is located in Chelmsford, England, UK.
@@ -965,8 +982,8 @@ Endurance rating 54h<br><br>
 
     <hr>
     
-    
-  <strong>  <h4>Terms & Conditions</h4> </strong>
+    <div id="termsandconditions"></div> <br>
+  <strong>  <h3>Terms & Conditions</h3> </strong>
 
     <article> <ul> <li>
         Goods once sold will not be taken back nor exchanged. So please ensure that you choose the right product.
@@ -990,8 +1007,8 @@ Endurance rating 54h<br><br>
 
     text-align: justify;
             font-size: 85%;">
-    
-     <h4>Privacy</h4>
+    <div id="privacy"></div> <br>
+     <h3>Privacy</h3>
 
     <article><p> We greatly value your privacy concerning any personal data that is submitted to us via our contact page, email, phone etc. We do endeavour to ensure that all electronic data is safely secured in our private servers located in Portugal which are securely guarded. <br> <br> All physical correspondence is kept within our company vault and is all treated with the utmost confidence. Thus you can rest assured that your personal details such as your address, email, credit card or debit card details will never be compromised nor revealed. Much obliged for doing business with us.</p></article> 
     
@@ -1001,31 +1018,40 @@ Endurance rating 54h<br><br>
 
     text-align:left;
             font-size: 85%;"> </div>
+    <div id="contact"></div> <br>
+<h3>Contact/ Order Form</h3>
     
-<h3>Contact Form</h3>
+<p>If you would like to order an iPhone 5S, please fill in the below form and we will get back to you within 24hrs to complete and finalize your order along with establishing a secure payment gateway.</p>
 
 <div class="container">
   <form action="https://www.freecodecamp.com/email-submit">
     <label for="fname">First-Name </label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
 
     <label for="lname">Last-Name </label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
       
       <label for="email">Email-address </label> <br>
     <input type="email" id="email" name="email" 
         title="The domain portion of the email address is invalid (the portion after the @)." pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$"       
-        placeholder="Please enter your valid email address here if any" required> <br>
+        placeholder="Please enter your valid email address here if any" > <br>
 
+   <label for="country">Country </label>
+  <input type="text" id="country" name="country" placeholder="Your country.." required> <Br>
+      
+         <label for="state">State </label>
+  <input type="text" id="state" name="state" placeholder="Your state.." required><Br>
+      
+         <label for="pinzip">PIN-or-ZIP-code </label>
+  <input type="number" id="pinzip" name="pinzip" placeholder="Your PIN/ ZIP code.."required> <br>
+      
+         <label for="phonenumber">Phone-number</label>
+  <input type="number" id="phonenumber" name="phonenumber" placeholder="Your phone number.."required>
+      
+         <label for="address">Address</label>
+  <input type="text" id="address" name="address" placeholder="Your full home/ office address.."required>
 
-    <label for="country">Country</label>
-    <select id="country" name="country">
-      <option value="australia">Australia</option>
-      <option value="canada">Canada</option>
-      <option value="usa">USA</option>
-    </select>
-
-    <label for="subject">Subject</label>
+    <label for="subject">Additional-details</label>
     <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
 
     <input type="submit" value="Submit">
@@ -1033,20 +1059,29 @@ Endurance rating 54h<br><br>
 </div>
     <div class="video-container" style="margin-top: 5vw; text-align: left">
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2470.887276328496!2d0.46855866671373464!3d51.735097095138045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s!2sBurgess%20Springs!5e0!3m2!1sen!2sin!4v1586276507821!5m2!1sen!2sin" width="100%" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-    </div>
+    </div> <br> <Br><br>
     
+    
+    
+    
+
+<h3><article style="text-align: center;"> <strong>For further information, you can reach out to us on the following contact details:</strong></article></h3>
     <div class="flex-container">
  
 
- <div> John Doe xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-     xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-        fccccccccccccccccccccccccccb 
-        rgeggggggggggggggg
-        yyyyyyyyyyyyyyyyyy</div>
-  <div> John Doe</div> 
+ <div><strong> <u>Ezekiel Carvalho </u></strong><br> <Br>
+    Baker St. 22534,<br>
+    Opp. Chelemsford town hall <br> <Br>
+     Phone no: 134529359234 <br><Br>
+     e-mail address: ezekielcarvalho@ctech.com <br>
     </div>
-   
-
+ <div><strong> <u>Elijah Carvalho </u></strong><br> <Br>
+    Cornwallis Rd. 125134,<br>
+    Block A-7, Harbinger Building <br> <Br>
+     Phone no: 36245123412 <br><Br>
+     e-mail address: elijahcarvalho@ctech.com
+     </Br>
+     </div>
 
      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>   
    
