@@ -43,7 +43,7 @@ User Story #15: My product landing page should utilize CSS flexbox at least once
     <style>
         
     html {
-  scroll-behavior: smooth;
+  scroll-behavior:auto;
 }
         
         
@@ -271,13 +271,14 @@ header {
 	padding: 10px 0;
 	margin-bottom: auto;
 	color: #fff;
-	font-size: 18px;
+	font-size: 2vw auto;
 	box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
 	border-bottom: 1px solid #00111f;
 	z-index: 1000;
+    top:0;
 	position: -webkit-sticky;
 	position: sticky;
-	top:0;
+	
 	position: -moz-sticky;
 	position: -ms-sticky;
 	position: -o-sticky;
@@ -289,7 +290,7 @@ header {
   display: block;
   color: #000000;
   text-align: center;
-  padding: 18.5px 10px;
+  padding: 15px 9px;
   text-decoration: none;
 font-size: 85%;
   font-family: 'PT Sans', sans-serif;
