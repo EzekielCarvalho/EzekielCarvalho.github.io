@@ -45,36 +45,72 @@ User Story #15: My Technical Documentation page should use at least one media qu
             html {
   scroll-behavior:smooth;
 }
-        
-         body{
-  
-  /* Fallback (could use .jpg/.png alternatively) */
-  background-color: #ffffff;
 
-  /* SVG fallback for IE 9 (could be data URI, or could use filter) */
-  background-image: ); 
+        .sidenav {
+            
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
 
-  /* Safari 4, Chrome 1-9, iOS 3.2-4.3, Android 2.1-3.0 */
-  background-image:
-    -webkit-gradient(linear, top, bottom, from(#ffffff), to(#f06d06));
-  
-  /* Safari 5.1, iOS 5.0-6.1, Chrome 10-25, Android 4.0-4.3 */
-  background-image:
-    -webkit-linear-gradient(top, #ffffff, #ffffff);
+.sidenav a {
+  padding: 10px 10px 10px 10px;
+  text-decoration:none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+    float: left;
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
 
-  /* Firefox 3.6 - 15 */
-  background-image:
-    -moz-linear-gradient(top, #c9c9c9, #c6c6c6);
-
-  /* Opera 11.1 - 12 */
-  background-image:
-    -o-linear-gradient(top, #b5b5b5, #bfbdbd);
-
-  /* Opera 15+, Chrome 25+, IE 10+, Firefox 16+, Safari 6.1+, iOS 7+, Android 4.4+ */
-  background-image:
-    linear-gradient(to bottom, #ffffff, #a7a7a7);
+font-family: 'Baloo Paaji 2', cursive;
+  padding: 16px 10px;
 
 }
+
+.sidenav a:hover {
+  color: #f44b4b;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+        
+        
+
+  body{
+ 
+
+         background-image:linear-gradient(
+      rgba(255, 147, 0, 0.54), 
+             rgba(209, 113, 113, 0.4), 
+               rgba(255, 255, 255, 0.45), 
+               rgba(88, 0, 255, 0.44), 
+             rgba(168, 154, 248, 0.4), 
+             rgba(173, 173, 173, 0.97), 
+      #adadad
+    ),  url("https://images.unsplash.com/photo-1581013793663-dedd7e462266?ixlib=rb-1.2.1&auto=format&fit=crop&w=1575&q=80");
+            
+ background-attachment:fixed;
+background-repeat:no-repeat;
+background-size:cover;
+background-position:center;
+        /* overflow-x: hidden; /* Hide horizontal scrollbar */     
+  }
     
         .responsive {
   width: 100%;
@@ -140,6 +176,57 @@ font-family: 'Baloo Paaji 2', cursive;
   padding: 30px;
   text-align: center;
 }
+        
+            .navbartwo {
+  overflow: hidden;
+  background-color: #adadad;
+  position: fixed;
+  bottom: 0;
+   list-style:none;
+    font-weight:bold;
+    float:left;
+    width:100%;
+    word-spacing: 0px;
+	margin-bottom: 2%;
+    margin-top: 25px;
+	color: #fff;
+	font-size: 20px;
+     
+
+
+    top:0;
+	position: -webkit-sticky;
+	position: sticky;
+	
+	position: -moz-sticky;
+	position: -ms-sticky;
+	position: -o-sticky;
+}
+
+.navbartwo a {
+  float: left;
+  display: block;
+  color: #343434;
+  text-align: center;
+  padding: 1px 15px;
+  text-decoration: none;
+
+font-family: 'Baloo Paaji 2', cursive;
+
+  text-decoration: none;
+}
+
+.navbartwo a:hover {
+  background: #e85757;
+  color: black;
+    
+}
+
+.navbartwo a.active {
+  background-color: #d04545;
+  color: white;
+}
+
 
 #navbar {
   overflow:visible;
@@ -196,6 +283,7 @@ font-family: 'Baloo Paaji 2', cursive;
     text-align: justify;
     font-size: 75%;
 font-family: 'Baloo Paaji 2', cursive;
+    
 }
 
 .sticky {
@@ -285,23 +373,24 @@ section img {
   </div> 
  
 <div id="navbar">
-  <a  href="javascript:void(0)">Home</a>
-  <a href="javascript:void(0)">About Us</a>
- 
-     <div class="language">
-    <button class="langbtn">Languages 
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="language-content">
-      <a href="#">HTML 5</a>
-      <a href="#">CSS 3</a>
-      <a href="#">Javascript</a>
-    </div>
-          <a href="javascript:void(0)">References</a> 
-  </div> 
     
-     <a href="javascript:void(0)"> Privacy</a>
-     <a href="javascript:void(0)"> Contact Us</a>
+    <span style="float: left;
+  display: block;
+  color: #343434;
+  text-align: center;
+  text-decoration: none;
+
+font-family: 'Baloo Paaji 2', cursive;
+  padding: 16px 10px;
+  text-decoration: none;
+  font-size: 17px;cursor:pointer" onclick="openNav()">&#9776; Languages</span>
+  <a  href="javascript:void(0)">Home</a>
+  
+  <a href="javascript:void(0)">About Me</a>
+ 
+    
+     <a href="javascript:void(0)"> Contact Me</a>
+    
 </div>
 
 
@@ -314,7 +403,7 @@ section img {
       <div class="jumbotron">
        <h2> <strong> Home </strong></h2> <br>
           <h3> <strong><u>Purpose of Site</u></strong></h3>
-            <p>This site was made with the sole intention to make the learning of computer languages easy and straightforward. <br><br>
+            <p>This site was made with the sole intention to make the learning of computer languages easy and straightforward. While we try to explain the concepts of languages here, this is in no way an exhaustive site for learning computer languages. For an in-depth look into comprehensive studies into computer programming languages, please visit the references page and check out the cool websites referenced there.<br><br>
                 
             <div class="gradient">
                 <img style="border-radius: 5%;   margin-bottom: 5%;"  src="https://inteng-storage.s3.amazonaws.com/img/iea/nR6bV9jp6o/sizes/learntocodebundle_resize_md.jpg" alt="Nature" class="responsive" width="800" height="400">
@@ -372,6 +461,19 @@ section img {
     </div>
 
        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1504&q=80" alt="Nature" class="responsive" width="800" height="400">
+      
+      <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">HTML5</a>
+  <a href="#">CSS3</a>
+  <a href="#">Javascript</a>
+  <a href="#">React</a>
+</div>
+      <div class="navbartwo">
+  <a href="#References" class="active">References</a>
+  <a href="#">Privacy</a>
+
+</div>
   </section>
 </div>
 
@@ -421,7 +523,17 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
-</script>        
+</script>
+        
+              <script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "120px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
         
         <footer>
         
