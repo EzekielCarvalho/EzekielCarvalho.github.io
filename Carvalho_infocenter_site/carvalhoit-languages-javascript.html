@@ -47,7 +47,7 @@ div.stuck {
   position: sticky;
   top: 0;
   background-color: #ffeb00;
-  padding: 20px;
+  padding: 1px;
   font-size: 20px;
     text-align: center;
     color: #343434;
@@ -59,11 +59,11 @@ div.stuck {
 }
     
     .containerone {
-        background-color: rgba(0,0,0,0.8); }
+        background-color: rgba(0,0,0,0.5); }
     
-    .containertwo {padding: 16px;
-  margin-left: 10%;
-               margin-right: 10%;}
+    .containertwo {padding: 1px;
+  margin-left: 5%;
+               margin-right: 5%;}
         
         .sidenav {
             
@@ -82,7 +82,7 @@ div.stuck {
 .sidenav a {
   padding: 10px 10px 10px 10px;
   text-decoration:none;
-  font-size: 25px;
+  font-size: 20px;
   color: #818181;
   display: block;
   transition: 0.3s;
@@ -105,81 +105,29 @@ font-family: 'Baloo Paaji 2', cursive;
   position: absolute;
   top: 0;
   right: 25px;
-  font-size: 36px;
+  font-size: 30px;
   margin-left: 50px;
 }
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-        
-         body
-    
-    {
-  /* Location of the image */
-  background-image: url(" https://images.unsplash.com/photo-1579820010410-c10411aaaa88?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1374&q=80" );
-  
-  /* Image is centered vertically and horizontally at all times */
-  background-position: center center;
-  
-  /* Image doesn't repeat */
-  background-repeat: no-repeat;
-  
-  /* Makes the image fixed in the viewport so that it doesn't move when 
-     the content height is greater than the image height */
-  background-attachment: fixed;
-  
-  /* This is what makes the background image rescale based on its container's size */
-  background-size: cover;
-  
-  /* Pick a solid background color that will be displayed while the background image is loading */
-  background-color:#464646;
-  
-  /* SHORTHAND CSS NOTATION
-   * background: url(background-photo.jpg) center center cover no-repeat fixed;
-   */
-}
+      body{
+ 
 
-/* For mobile devices */
-@media only screen and (max-width: 767px) {
-  body {
-    /* The file size of this background image is 93% smaller
-     * to improve page load speed on mobile internet connections */
-    background-image: url("https://images.unsplash.com/photo-1579820010410-c10411aaaa88?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1374&q=80"); 
+         background-image:linear-gradient(
+      rgb(255, 210, 0), 
+             rgb(255, 216, 0),
+             rgba(255, 236, 11, 0.27),
+             rgba(181, 185, 141, 0.22), 
+             rgba(216, 211, 211, 0.43), 
+             rgba(100, 100, 100, 0.42), 
+      rgb(41, 41, 41)
+    ),  url("https://images.unsplash.com/photo-1579820010410-c10411aaaa88?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1374&q=80");
+            
+ background-attachment:fixed;
+background-repeat:no-repeat;
+background-size:cover;
+background-position:center;
+        /* overflow-x: hidden; /* Hide horizontal scrollbar */     
   }
-	} 
-    
-    {
-  
-  /* Fallback (could use .jpg/.png alternatively) */
-  background-color: #ffffff;
-
-  /* SVG fallback for IE 9 (could be data URI, or could use filter) */
-  background-image: ); 
-
-  /* Safari 4, Chrome 1-9, iOS 3.2-4.3, Android 2.1-3.0 */
-  background-image:
-    -webkit-gradient(linear, top, bottom, from(#ffffff), to(#f06d06));
-  
-  /* Safari 5.1, iOS 5.0-6.1, Chrome 10-25, Android 4.0-4.3 */
-  background-image:
-    -webkit-linear-gradient(top, #ffffff, #ffffff);
-
-  /* Firefox 3.6 - 15 */
-  background-image:
-    -moz-linear-gradient(top, #c9c9c9, #c6c6c6);
-
-  /* Opera 11.1 - 12 */
-  background-image:
-    -o-linear-gradient(top, #b5b5b5, #bfbdbd);
-
-  /* Opera 15+, Chrome 25+, IE 10+, Firefox 16+, Safari 6.1+, iOS 7+, Android 4.4+ */
-  background-image:
-    linear-gradient(to bottom, #ffffff, #a7a7a7);
-
-}
-    
         .responsive {
   width: 100%;
   max-width: 100%;
@@ -193,7 +141,7 @@ font-family: 'Baloo Paaji 2', cursive;
         
    body {
        color: white;
-  margin: 0;
+  margin-left: 0;
   font-size: 28px;
   font-family: 'Baloo Paaji 2', cursive;
 }
@@ -203,6 +151,57 @@ font-family: 'Baloo Paaji 2', cursive;
   padding: 30px;
   text-align: center;
 }
+    
+    .navbartwo {
+  overflow: hidden;
+  background-color: #adadad;
+  position: fixed;
+  bottom: 0;
+   list-style:none;
+    font-weight:bold;
+    float:left;
+    width:100%;
+    word-spacing: 0px;
+	margin-bottom: 2%;
+    margin-top: 25px;
+	color: #fff;
+	font-size: 20px;
+     
+	box-shadow: 0 9px 06px 0 rgba(0, 0, 0, 0.2);
+	border-bottom: 1px solid #000000;
+
+    top:0;
+	position: -webkit-sticky;
+	position: sticky;
+	
+	position: -moz-sticky;
+	position: -ms-sticky;
+	position: -o-sticky;
+}
+
+.navbartwo a {
+  float: left;
+  display: block;
+  color: #343434;
+  text-align: center;
+  padding: 1px 15px;
+  text-decoration: none;
+
+font-family: 'Baloo Paaji 2', cursive;
+
+  text-decoration: none;
+}
+
+.navbartwo a:hover {
+  background: #e85757;
+  color: black;
+    
+}
+
+.navbartwo a.active {
+  background-color: #d04545;
+  color: white;
+}
 
 #navbar {
   overflow:visible;
@@ -210,12 +209,12 @@ font-family: 'Baloo Paaji 2', cursive;
     font-weight:bold;
     float:left;
     width:100%;
-    word-spacing: 1px;
+    word-spacing: 0px;
    background: #adadad;
-	margin-bottom: 4%;
-    margin-top: 0px;
+	margin-bottom: %;
+ 
 	color: #fff;
-	font-size: 2vw auto;
+	font-size: 20px;
      
 	box-shadow: 0 9px 06px 0 rgba(0, 0, 0, 0.2);
 	border-bottom: 1px solid #000000;
@@ -240,7 +239,7 @@ font-family: 'Baloo Paaji 2', cursive;
 font-family: 'Baloo Paaji 2', cursive;
   padding: 17px 8px;
   text-decoration: none;
-  font-size: 17px;
+  
 }
 
 #navbar a:hover {
@@ -256,7 +255,7 @@ font-family: 'Baloo Paaji 2', cursive;
 .content {
 
     text-align:justify-all;
-    font-size: 70%;
+    font-size: 65%;
 font-family: 'Baloo Paaji 2', cursive;
 }
 
@@ -336,18 +335,14 @@ section img {
   text-decoration: none;
 
 font-family: 'Baloo Paaji 2', cursive;
-  padding: 16px 10px;
+  padding: 17px 8px;
   text-decoration: none;
-  font-size: 17px;cursor:pointer" onclick="openNav()">&#9776; Languages</span>
+  font-size: 20px;cursor:pointer" onclick="openNav()">&#9776; Languages</span>
   <a  href="javascript:void(0)">Home</a>
   
-  <a href="javascript:void(0)">About Us</a>
+  <a href="javascript:void(0)">About Me</a>
  
-     <a href="javascript:void(0)">References</a> 
-
-    
-     <a href="javascript:void(0)"> Privacy</a>
-     <a href="javascript:void(0)"> Contact Us</a>
+     <a href="javascript:void(0)"> Contact Me</a>
 </div>
 
 
@@ -365,9 +360,9 @@ font-family: 'Baloo Paaji 2', cursive;
           <div class="stuck"><h3>What is Javascript?</h3> </div>
           
           <div class="containerone">
-             <p style=" padding: 16px;
-  margin-left: 20%;
-    margin-right: 20%;">JavaScript is primarily known as the language of most modern web browsers. It was it's early oddities that gave it a bad name. Nevertheless, the language has continued to develop and improve. JavaScript is a powerful, flexible, and fast programming language now being used for increasingly complex web development and beyond! Moreover, it’s often the first language learned by self-taught coders eager to learn and build. JavaScript powers the dynamic behavior on most websites, thus you can see it's prominence. <br><br>
+             <p style=" padding: 10px;
+  margin-left: 5%;
+    margin-right: 5%;">JavaScript is primarily known as the language of most modern web browsers. It was it's early oddities that gave it a bad name. Nevertheless, the language has continued to develop and improve. JavaScript is a powerful, flexible, and fast programming language now being used for increasingly complex web development and beyond! Moreover, it’s often the first language learned by self-taught coders eager to learn and build. JavaScript powers the dynamic behavior on most websites, thus you can see it's prominence. <br><br>
           
        JavaScript was primarily created to make pages living, basically.
 
@@ -378,16 +373,16 @@ Scripts are provided and executed as plain text. They don’t need special prepa
 In this aspect, JavaScript is very different from another language called Java, which is another popular language.   </p></div>
           <div class="containerone">
            
-          <p style=" padding: 16px;
-  margin-left: 20%;
-    margin-right: 20%;">JavaScript is the programming language of HTML and the Web and is easy to learn. JavaScript and Java are completely different languages, both in concept and design.
+          <p style=" padding: 10px;
+  margin-left: 5%;
+    margin-right: 5%;">JavaScript is the programming language of HTML and the Web and is easy to learn. JavaScript and Java are completely different languages, both in concept and design.
 
 JavaScript was invented by Brendan Eich in 1995, and became an ECMA standard in 1997.
 ECMA-262 is the official name of the standard. ECMAScript is the official name of the language.</p></div> 
           <div class="containerone">
-          <div class="stuck"><h3>Reasons for the name "Javascript"</h3> </div>  <p style=" padding: 16px;
-  margin-left: 20%;
-    margin-right: 20%;">When JavaScript was created, it initially had another name: “LiveScript”. But Java was very popular at that time, so it was decided that positioning a new language as a “younger brother” of Java would help.
+          <div class="stuck"><h3>Reasons for the name "Javascript"</h3> </div>  <p style=" padding: 10px;
+  margin-left: 5%;
+    margin-right: 5%;">When JavaScript was created, it initially had another name: “LiveScript”. But Java was very popular at that time, so it was decided that positioning a new language as a “younger brother” of Java would help.
 
           But as it evolved, JavaScript became a fully independent language with its own specification called ECMAScript, and now it has no relation to Java at all. <br><br>
           
@@ -402,9 +397,9 @@ SpiderMonkey – in Firefox.
 …There are other codenames like “Trident” and “Chakra” for different versions of IE, “ChakraCore” for Microsoft Edge, “Nitro” and “SquirrelFish” for Safari, etc.
 The terms above are good to remember because they are used in developer articles on the internet. We’ll use them too. For instance, if “a feature X is supported by V8”, then it probably works in Chrome and Opera.</p></div>
           <div class="containerone">
-           <div class="stuck"><h3>Abilities of the in-browser Javascript</h3> </div>  <p style=" padding: 16px;
-  margin-left: 20%;
-    margin-right: 20%;">Modern JavaScript while being a safe language was mainly made for browsers which do not require high level access to RAM or CPU.
+           <div class="stuck"><h3>Abilities of the in-browser Javascript</h3> </div>  <p style=" padding: 10px;
+  margin-left: 5%;
+    margin-right: 5%;">Modern JavaScript while being a safe language was mainly made for browsers which do not require high level access to RAM or CPU.
 
 The power and abilities of javaScript depend on the environment it’s executing in. 
 
@@ -417,30 +412,30 @@ React to user actions, run on mouse clicks, pointer movements, key presses.
 Send requests over the network to remote servers, download and upload files (so-called AJAX and COMET technologies).
 </p></div>
           <div class="containerone">
-          <div class="stuck"><h3>Inabilities of the in-browser Javascript</h3> </div>  <p style=" padding: 16px;
-  margin-left: 20%;
-    margin-right: 20%;"> In order to keep the user safe, there are tasks which in-browser Javascript are unable to perform. The goal here is to prevent an evil webpage from accessing private information or harming the user’s data. Privacy is at stake once you begin to manipulate and use Javascript, and hence to protect sensitive data of individual users, there are functions that are sort of disabled within browsers that use Javscript.
+          <div class="stuck"><h3>Inabilities of the in-browser Javascript</h3> </div>  <p style=" padding: 10px;
+  margin-left: 5%;
+    margin-right: 5%;"> In order to keep the user safe, there are tasks which in-browser Javascript are unable to perform. The goal here is to prevent an evil webpage from accessing private information or harming the user’s data. Privacy is at stake once you begin to manipulate and use Javascript, and hence to protect sensitive data of individual users, there are functions that are sort of disabled within browsers that use Javscript. <br> <br>
 
-Examples of such restrictions include:
+Examples of such restrictions include: <br> <br>
 
-JavaScript on a webpage may not read/write arbitrary files on the hard disk, copy them or execute programs. It has no direct access to OS functions.
+JavaScript on a webpage may not read/write arbitrary files on the hard disk, copy them or execute programs. It has no direct access to OS functions.<br><br>
 
-Modern browsers allow it to work with files, but the access is limited and only provided if the user does certain actions, like “dropping” a file into a browser window or selecting it via an input tag.
+Modern browsers allow it to work with files, but the access is limited and only provided if the user does certain actions, like “dropping” a file into a browser window or selecting it via an input tag. <br> <br>
 
-There are ways to interact with camera/microphone and other devices, but they require a user’s explicit permission. So a JavaScript-enabled page may not sneakily enable a web-camera, observe the surroundings and send the information to the NSA.
+There are ways to interact with camera/microphone and other devices, but they require a user’s explicit permission. So a JavaScript-enabled page may not sneakily enable a web-camera, observe the surroundings and send the information to the NSA. <br> <br>
 
-Different tabs/windows generally do not know about each other. Sometimes they do, for example when one window uses JavaScript to open the other one. But even in this case, JavaScript from one page may not access the other if they come from different sites (from a different domain, protocol or port).
+Different tabs/windows generally do not know about each other. Sometimes they do, for example when one window uses JavaScript to open the other one. But even in this case, JavaScript from one page may not access the other if they come from different sites (from a different domain, protocol or port). <br><br>
 
-This is called the “Same Origin Policy”. To work around that, both pages must agree for data exchange and contain a special JavaScript code that handles it. We’ll cover that in the tutorial.
+This is called the “Same Origin Policy”. To work around that, both pages must agree for data exchange and contain a special JavaScript code that handles it. We’ll cover that in the tutorial.<br><br>
 
-This limitation is, again, for the user’s safety. A page from http://anysite.com which a user has opened must not be able to access another browser tab with the URL http://gmail.com and steal information from there.
+This limitation is, again, for the user’s safety. A page from http://anysite.com which a user has opened must not be able to access another browser tab with the URL http://gmail.com and steal information from there. <br>
 
  </p></div>
           
           <div class="containerone">
-           <div class="stuck"><h3>Uniqueness of Javascript</h3> </div><p style=" padding: 16px;
-  margin-left: 20%;
-               margin-right: 20%;">
+           <div class="stuck"><h3>Uniqueness of Javascript</h3> </div><p style=" padding: 10px;
+  margin-left: 5%;
+               margin-right: 5%;">
               
               Javascript is different and special because it allows for a
               full unity and integration with HTML/CSS, 
@@ -785,7 +780,11 @@ Notice that:<br>
   <a href="#">React</a>
 </div>
 
+<div class="navbartwo">
+  <a href="#References" class="active">References</a>
+  <a href="#">Privacy</a>
 
+</div>
 
    
   </section>
