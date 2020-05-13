@@ -163,7 +163,7 @@ border-bottom: 10px solid #009432;
 }
     
     .sticky .main-nav {
-
+float: left;
     margin-bottom: 25px;
 }
     
@@ -173,7 +173,8 @@ border-bottom: 10px solid #009432;
     color:white;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 0;
+    font-size: 100%;
+    float: left;
     border-bottom: 2px solid 
         transparent;
         -webkit-transition: border-bottom 0.4s;
