@@ -156,14 +156,14 @@ border-bottom: 10px solid #009432;
     
     
     .main-nav {
-    float: left;
+    float: right;
     list-style: none;
     margin-top: 15px;
     
 }
     
     .sticky .main-nav {
-float: left;
+
     margin-bottom: 25px;
 }
     
@@ -174,7 +174,6 @@ float: left;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 100%;
-    float: left;
     border-bottom: 2px solid 
         transparent;
         -webkit-transition: border-bottom 0.4s;
@@ -188,18 +187,4 @@ border-bottom: 10px solid #009432;
     transition: border-bottom 0.5s;
 }
 
-    .logo{
-    height: 100px;
-    width: auto;
-    float: left;
-    margin-top: 20px;
-}
-
-.logo-black {display: none;
-  height: 50px;
-    width: auto;
-    float: left;
-    margin-top: 20px;
-margin-bottom: 20px;}
-    
 }
